@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo rainer</title>
+  <title>天空很蓝</title>
   
   
   <link href="https://rainerpiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://rainerpiao.github.io/"/>
-  <updated>2022-01-02T11:45:36.720Z</updated>
+  <updated>2022-01-02T12:48:29.489Z</updated>
   <id>https://rainerpiao.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>rainerliu</name>
     
   </author>
   
@@ -18,10 +18,10 @@
   
   <entry>
     <title>使用Hexo和Github搭建博客</title>
-    <link href="https://rainerpiao.github.io/2021/12/26/hello-world/"/>
-    <id>https://rainerpiao.github.io/2021/12/26/hello-world/</id>
+    <link href="https://rainerpiao.github.io/2021/12/26/hello-hexo/"/>
+    <id>https://rainerpiao.github.io/2021/12/26/hello-hexo/</id>
     <published>2021-12-26T03:36:10.662Z</published>
-    <updated>2022-01-02T11:45:36.720Z</updated>
+    <updated>2022-01-02T12:48:29.489Z</updated>
     
     
       
@@ -38,6 +38,8 @@
     
     
     <category term="Hexo" scheme="https://rainerpiao.github.io/tags/Hexo/"/>
+    
+    <category term="Github" scheme="https://rainerpiao.github.io/tags/Github/"/>
     
   </entry>
   
