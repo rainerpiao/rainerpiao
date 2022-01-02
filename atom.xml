@@ -6,7 +6,7 @@
   <link href="https://rainerpiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://rainerpiao.github.io/"/>
-  <updated>2022-01-02T12:48:29.489Z</updated>
+  <updated>2022-01-02T14:58:49.368Z</updated>
   <id>https://rainerpiao.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://rainerpiao.github.io/2021/12/26/hello-hexo/"/>
     <id>https://rainerpiao.github.io/2021/12/26/hello-hexo/</id>
     <published>2021-12-26T03:36:10.662Z</published>
-    <updated>2022-01-02T12:48:29.489Z</updated>
+    <updated>2022-01-02T14:58:49.368Z</updated>
     
     
       
@@ -37,9 +37,7 @@
     <category term="建站" scheme="https://rainerpiao.github.io/categories/%E5%BB%BA%E7%AB%99/"/>
     
     
-    <category term="Hexo" scheme="https://rainerpiao.github.io/tags/Hexo/"/>
-    
-    <category term="Github" scheme="https://rainerpiao.github.io/tags/Github/"/>
+    <category term="+ Hexo + Github" scheme="https://rainerpiao.github.io/tags/Hexo-Github/"/>
     
   </entry>
   
