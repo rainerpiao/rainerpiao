@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo rainer</title>
+  
+  
+  <link href="https://rainerpiao.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://rainerpiao.github.io/"/>
+  <updated>2022-01-02T01:22:23.732Z</updated>
+  <id>https://rainerpiao.github.io/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://rainerpiao.github.io/2021/12/26/hello-world/"/>
+    <id>https://rainerpiao.github.io/2021/12/26/hello-world/</id>
+    <published>2021-12-26T03:36:10.662Z</published>
+    <updated>2022-01-02T01:22:23.732Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
