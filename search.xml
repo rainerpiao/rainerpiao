@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>hello-typora-picgo</title>
+      <link href="/2022/01/05/hello-typora-picgo/"/>
+      <url>/2022/01/05/hello-typora-picgo/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Typora中使用上传图片插件"><a href="#Typora中使用上传图片插件" class="headerlink" title="Typora中使用上传图片插件"></a>Typora中使用上传图片插件</h2><blockquote><p>我们使用Typora写Markdown文档很方便，但是引用图片时候只能使用url让人感觉很不方便，其实我们可以使用图床来存我们的图片素材，可以在编写文档通过插件自动上传到我们的图床中，相当方便。</p></blockquote><h3 id="安装PicGo插件"><a href="#安装PicGo插件" class="headerlink" title="安装PicGo插件"></a>安装PicGo插件</h3><blockquote><p><strong>一个用于快速上传图片并获取图片 URL 链接的工具，</strong>PicGo上传之后，会自动将上传成功的URL复制到你的剪贴板，支持5种复制格式。</p><p>PicGo <a href="https://picgo.github.io/PicGo-Doc/zh/guide/getting-started.html">https://picgo.github.io/PicGo-Doc/zh/guide/getting-started.html</a></p></blockquote><h3 id="注册SM-MS账号"><a href="#注册SM-MS账号" class="headerlink" title="注册SM. MS账号"></a>注册SM. MS账号</h3><blockquote><p>图床申请<a href="https://sm.ms/login">https://sm.ms/login</a>，可以免费使用5G空间，每张图不超过5M.</p></blockquote><h3 id="在PicGo中配置SM-MS"><a href="#在PicGo中配置SM-MS" class="headerlink" title="在PicGo中配置SM. MS"></a>在PicGo中配置SM. MS</h3><p>配置token</p><p><img src="https://s2.loli.net/2022/01/04/I4fphlAsiZJgTtF.png" alt="image-20220104181011869"></p><p>注册并登录<a href="https://sm.ms/home/apitoken">smms</a>后台获取token值。</p><p><img src="https://s2.loli.net/2022/01/04/FCOwoeWq5J6VzZK.png" alt="image-20220104180933526"></p><h3 id="PicGo插件安装"><a href="#PicGo插件安装" class="headerlink" title="PicGo插件安装"></a>PicGo插件安装</h3><p>安装smms-user 1.0.8、autocopy 1.0.5插件，可在《设置》选项中进行一些参数设置。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Typora </tag>
+            
+            <tag> Markdown </tag>
+            
+            <tag> PicGo </tag>
+            
+            <tag> SM.MS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用Hexo和Github搭建博客</title>
       <link href="/2021/12/26/hello-hexo/"/>
       <url>/2021/12/26/hello-hexo/</url>

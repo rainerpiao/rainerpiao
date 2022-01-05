@@ -4,9 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="使用Hexo和Github搭建博客, 天空很蓝">
-    <meta name="description" content="使用Hexo和Github搭建博客
-自己作为程序员也工作十几年，居然没有自己的博客[捂脸]，毕竟有时候记录技术和自己的感悟也方便一些。记得以前使用tomcat+jsp搭建blog，全部都要自己写页面，现在发现通过Hexo搭建，还有很多好看的">
+    <meta name="keywords" content="hello-typora-picgo, 天空很蓝">
+    <meta name="description" content="Typora中使用上传图片插件
+我们使用Typora写Markdown文档很方便，但是引用图片时候只能使用url让人感觉很不方便，其实我们可以使用图床来存我们的图片素材，可以在编写文档通过插件自动上传到我们的图床中，相当方便。
+
+安装Pic">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +20,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>使用Hexo和Github搭建博客 | 天空很蓝</title>
+    <title>hello-typora-picgo | 天空很蓝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -313,12 +315,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">使用Hexo和Github搭建博客</h1>
+                    <h1 class="description center-align post-title">hello-typora-picgo</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +436,20 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
+                            <a href="/tags/Typora/">
+                                <span class="chip bg-color">Typora</span>
                             </a>
                         
-                            <a href="/tags/Github/">
-                                <span class="chip bg-color">Github</span>
+                            <a href="/tags/Markdown/">
+                                <span class="chip bg-color">Markdown</span>
+                            </a>
+                        
+                            <a href="/tags/PicGo/">
+                                <span class="chip bg-color">PicGo</span>
+                            </a>
+                        
+                            <a href="/tags/SM-MS/">
+                                <span class="chip bg-color">SM.MS</span>
                             </a>
                         
                     </div>
@@ -463,28 +473,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-12-26
+                    2022-01-05
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-01-02
+                    2022-01-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    894
+                    237
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -504,37 +514,21 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="使用Hexo和Github搭建博客"><a href="#使用Hexo和Github搭建博客" class="headerlink" title="使用Hexo和Github搭建博客"></a>使用Hexo和Github搭建博客</h2><blockquote>
-<p>自己作为程序员也工作十几年，居然没有自己的博客[捂脸]，毕竟有时候记录技术和自己的感悟也方便一些。记得以前使用tomcat+jsp搭建blog，全部都要自己写页面，现在发现通过Hexo搭建，还有很多好看的主题，顿时感觉幸福多了。说干就干，中间因为 <code>Github</code> 更换了登录验证方式（现在使用token验证了）耽误了一些时间，最终也差不多二天时间搞定，下面来介绍下具体的步骤：</p>
+                <h2 id="Typora中使用上传图片插件"><a href="#Typora中使用上传图片插件" class="headerlink" title="Typora中使用上传图片插件"></a>Typora中使用上传图片插件</h2><blockquote>
+<p>我们使用Typora写Markdown文档很方便，但是引用图片时候只能使用url让人感觉很不方便，其实我们可以使用图床来存我们的图片素材，可以在编写文档通过插件自动上传到我们的图床中，相当方便。</p>
 </blockquote>
-<h3 id="Step1-注册github账号"><a href="#Step1-注册github账号" class="headerlink" title="Step1 注册github账号"></a>Step1 注册github账号</h3><p>给大家介绍搭建的博客是部署在 <code>Github</code> 上的，所以肯定是要有一个 <code>Github</code> 账号的，没有的小伙伴去注册一个吧。</p>
-<h3 id="Step2-本地环境安装"><a href="#Step2-本地环境安装" class="headerlink" title="Step2 本地环境安装"></a>Step2 本地环境安装</h3><p>本机安装Node、Git、 Hexo，版本信息如下：</p>
-<p>luyodeMacBook-Pro:blog liuyong$ hexo -version<br>INFO  Validating config<br>hexo: 5.4.0<br>hexo-cli: 4.3.0<br>os: darwin 20.1.0 11.0.1</p>
-<p>node: 15.13.0<br>v8: 8.6.395.17-node.28<br>uv: 1.41.0<br>zlib: 1.2.11<br>brotli: 1.0.9<br>ares: 1.17.1<br>modules: 88<br>nghttp2: 1.42.0<br>napi: 8<br>llhttp: 2.1.3<br>openssl: 1.1.1j+quic<br>cldr: 38.1<br>icu: 68.2<br>tz: 2020d<br>unicode: 13.0<br>ngtcp2: 0.1.0-DEV<br>nghttp3: 0.1.0-DEV</p>
-<h3 id="Step3-初始化Hexo项目"><a href="#Step3-初始化Hexo项目" class="headerlink" title="Step3 初始化Hexo项目"></a>Step3 初始化Hexo项目</h3><p>hexo init blog</p>
-<p>新建完成后，指定文件夹目录下有：<br>node_modules: 依赖包<br>public：存放生成的页面<br>scaffolds：生成文章的一些模板<br>source：用来存放你的文章<br>themes：主题<br><strong>_config.yml: 博客的配置文件</strong></p>
-<p>在该目录下安装依赖<br>cd blog<br>npm install</p>
-<h3 id="Step4-启动Hexo服务"><a href="#Step4-启动Hexo服务" class="headerlink" title="Step4 启动Hexo服务"></a>Step4 启动Hexo服务</h3><p>Hexo g &amp; Hexo s</p>
-<p>hexo常用命令<br>hexo clean  # 删除编译缓存<br>hexo g == hexo generate #编译<br>hexo s == hexo server #启动服务预览<br>hexo d == hexo deploy #部署到github</p>
-<p><img src="https://s2.loli.net/2022/01/02/dEufHmwotlsybKY.png" alt="image-20220102184322215"></p>
-<h3 id="Step5-github上创建repostiy"><a href="#Step5-github上创建repostiy" class="headerlink" title="Step5 github上创建repostiy"></a>Step5 github上创建repostiy</h3><p>创建项目名为rainerpiao.github.io，用于创建编译好的html</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/rainerpiao/rainerpiao.github.io.git">https://github.com/rainerpiao/rainerpiao.github.io.git</a></p>
-<p><img src="https://s2.loli.net/2022/01/02/xZX1ketbiEAyUrK.png" alt="image-20220102184704197"></p>
-<p>进入rainerpiao.github.io项目路径setting/pages: 设置github pages信息</p>
-<p><img src="https://s2.loli.net/2022/01/02/xtUmoNFfr4G8hgV.png" alt="image-20220102184500727"></p>
-<h3 id="Step6-github上创建blog项目"><a href="#Step6-github上创建blog项目" class="headerlink" title="Step6 github上创建blog项目"></a>Step6 github上创建blog项目</h3><p>创建项目名为hexoblog，用于存放源码</p>
-<h3 id="Step7-本机生成SSH并添加到github"><a href="#Step7-本机生成SSH并添加到github" class="headerlink" title="Step7 本机生成SSH并添加到github"></a>Step7 本机生成SSH并添加到github</h3><p>在项目根目录下_config.yml文件中配置blog地址：<br>deploy:<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/rainerpiao/rainerpiao.git">https://github.com/rainerpiao/rainerpiao.git</a><br>  branch: master</p>
-<p>执行hexo d 失败：<br>remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.<br>remote: Please see <a target="_blank" rel="noopener" href="https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/">https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/</a> for more information.<br>fatal: ‘<a target="_blank" rel="noopener" href="https://github.com/rainerpiao/blog.git/'">https://github.com/rainerpiao/blog.git/'</a> 鉴权失败</p>
-<p>本地git配置<br>git config user.name<br>git config user.email<br>git配置<br>git config –global user.name “rainerpiao”<br>git config –global user.email “<a href="mailto:156572992@qq.com">156572992@qq.com</a>“</p>
-<p>然后创建SSH, 一路回车<br>ssh-keygen -t rsa -C “<a href="mailto:156572992@qq.com">156572992@qq.com</a>“</p>
-<p>生成的key在目录/Users/XXX/.ssh/下生成文件目录：<br>id_rsa、id_rsa.pub、known_hosts<br>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
-<p>登录<a target="_blank" rel="noopener" href="https://github.com/settings/keys">https://github.com/settings/keys</a> 添加ssh key<br>复制id_rsa.pub内容到key中，测试是否联通：<br>ssh -T <a href="mailto:git@github.com">git@github.com</a></p>
-<p><img src="https://s2.loli.net/2022/01/02/OXpBvWzDKmlVi9R.png" alt="image-20220102184839262"></p>
-<h3 id="Step8-主题配置"><a href="#Step8-主题配置" class="headerlink" title="Step8 主题配置"></a>Step8 主题配置</h3><p>主题配置hexo-theme-matery, 个人比较喜欢这个主题，另外hueman主题也还不错。</p>
-<p>遇到的问题：发现部署到github后控制台报 lightgallery-all.min.js net:: ERR_ABORTED 404，导致吸顶样式等一些问题，解决方案：到</p>
-<p><a target="_blank" rel="noopener" href="https://www.bootcdn.cn/">https://www.bootcdn.cn/</a> 查找对应的cdn资源，将主题下的_config.yml配置修改成</p>
-<p>jquery: <a target="_blank" rel="noopener" href="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js">https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js</a></p>
-<p>lightgallery: <a target="_blank" rel="noopener" href="https://cdn.bootcdn.net/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js">https://cdn.bootcdn.net/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js</a></p>
+<h3 id="安装PicGo插件"><a href="#安装PicGo插件" class="headerlink" title="安装PicGo插件"></a>安装PicGo插件</h3><blockquote>
+<p><strong>一个用于快速上传图片并获取图片 URL 链接的工具，</strong>PicGo上传之后，会自动将上传成功的URL复制到你的剪贴板，支持5种复制格式。</p>
+<p>PicGo <a target="_blank" rel="noopener" href="https://picgo.github.io/PicGo-Doc/zh/guide/getting-started.html">https://picgo.github.io/PicGo-Doc/zh/guide/getting-started.html</a></p>
+</blockquote>
+<h3 id="注册SM-MS账号"><a href="#注册SM-MS账号" class="headerlink" title="注册SM. MS账号"></a>注册SM. MS账号</h3><blockquote>
+<p>图床申请<a target="_blank" rel="noopener" href="https://sm.ms/login">https://sm.ms/login</a>，可以免费使用5G空间，每张图不超过5M.</p>
+</blockquote>
+<h3 id="在PicGo中配置SM-MS"><a href="#在PicGo中配置SM-MS" class="headerlink" title="在PicGo中配置SM. MS"></a>在PicGo中配置SM. MS</h3><p>配置token</p>
+<p><img src="https://s2.loli.net/2022/01/04/I4fphlAsiZJgTtF.png" alt="image-20220104181011869"></p>
+<p>注册并登录<a target="_blank" rel="noopener" href="https://sm.ms/home/apitoken">smms</a>后台获取token值。</p>
+<p><img src="https://s2.loli.net/2022/01/04/FCOwoeWq5J6VzZK.png" alt="image-20220104180933526"></p>
+<h3 id="PicGo插件安装"><a href="#PicGo插件安装" class="headerlink" title="PicGo插件安装"></a>PicGo插件安装</h3><p>安装smms-user 1.0.8、autocopy 1.0.5插件，可在《设置》选项中进行一些参数设置。</p>
 
                 
             </div>
@@ -561,7 +555,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://rainerpiao.github.io/2021/12/26/hello-hexo/">https://rainerpiao.github.io/2021/12/26/hello-hexo/</a>
+                    <a href="https://rainerpiao.github.io/2022/01/05/hello-typora-picgo/">https://rainerpiao.github.io/2022/01/05/hello-typora-picgo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -599,12 +593,20 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
+                                <a href="/tags/Typora/">
+                                    <span class="chip bg-color">Typora</span>
                                 </a>
                             
-                                <a href="/tags/Github/">
-                                    <span class="chip bg-color">Github</span>
+                                <a href="/tags/Markdown/">
+                                    <span class="chip bg-color">Markdown</span>
+                                </a>
+                            
+                                <a href="/tags/PicGo/">
+                                    <span class="chip bg-color">PicGo</span>
+                                </a>
+                            
+                                <a href="/tags/SM-MS/">
+                                    <span class="chip bg-color">SM.MS</span>
                                 </a>
                             
                         </div>
@@ -800,9 +802,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/01/05/hello-typora-picgo/">
                     <div class="card-image">
@@ -820,9 +823,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -835,6 +838,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -862,7 +866,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2021/12/26/hello-hexo/">
@@ -896,7 +900,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
