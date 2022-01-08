@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>mac中使用shell命令发送邮件</title>
+      <link href="/2022/01/08/hello-shell-mail/"/>
+      <url>/2022/01/08/hello-shell-mail/</url>
+      
+        <content type="html"><![CDATA[<h2 id="mac中使用shell命令发送邮件"><a href="#mac中使用shell命令发送邮件" class="headerlink" title="mac中使用shell命令发送邮件"></a>mac中使用shell命令发送邮件</h2><p>首先查看mail命令：</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">mail -h</span><br><span class="line">mail: illegal option -- h</span><br><span class="line">Usage: mail [-EiInv] [-s subject] [-c cc-addr] [-b bcc-addr] [-F] to-addr ...</span><br><span class="line">       mail [-EHiInNv] [-F] -f [name]</span><br><span class="line">       mail [-EHiInNv] [-F] [-u user]</span><br><span class="line">       mail -e [-f name]</span><br><span class="line">       mail -H</span><br></pre></td></tr></tbody></table></figure><h3 id="发送邮件1"><a href="#发送邮件1" class="headerlink" title="发送邮件1"></a>发送邮件1</h3><p>邮件内容和标题不支持中文</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'hello email'</span> | mail -s <span class="string">'https://rainerpiao.github.io'</span> user@qq.com</span><br></pre></td></tr></tbody></table></figure><h3 id="发送邮件2"><a href="#发送邮件2" class="headerlink" title="发送邮件2"></a>发送邮件2</h3><p>读取文件中的内容进行发送，支持中文内容, 但标题不支持中文。</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cat test.txt | mail -s <span class="string">'https://rainerpiao.github.io'</span> user@qq.com</span><br><span class="line">mail -s <span class="string">"https://rainerpiao.github.io"</span> user@qq.com&lt;test.txt</span><br></pre></td></tr></tbody></table></figure><h3 id="发送邮件3"><a href="#发送邮件3" class="headerlink" title="发送邮件3"></a>发送邮件3</h3><p>同时发送给多个收件人, 空格隔开</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat test.txt | mail -s <span class="string">'https://rainerpiao.github.io'</span> user1@qq.com user2@qq.com</span><br></pre></td></tr></tbody></table></figure><h3 id="发送邮件4"><a href="#发送邮件4" class="headerlink" title="发送邮件4"></a>发送邮件4</h3><p>发送邮件同时抄送给其他人</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'hello cc'</span> | mail -s <span class="string">'https://rainerpiao.github.io'</span> -c <span class="string">"useq@126.com"</span> user@qq.com</span><br></pre></td></tr></tbody></table></figure><h3 id="发送邮件5"><a href="#发送邮件5" class="headerlink" title="发送邮件5"></a>发送邮件5</h3><p>同时抄送并密送给其他人, 同时抄送多个人用;分割，并加引号””包含</p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'hello cc bcc'</span> | mail -s <span class="string">'hello test'</span> -c <span class="string">"user1@126.com"</span> -b <span class="string">"user2@qq.com"</span> user3@126.com</span><br><span class="line"><span class="built_in">echo</span> <span class="string">'hello cc bcc'</span> | mail -s <span class="string">'hello mail123'</span> -c <span class="string">'use1@gmail.com;use2@126.com'</span> -b us3@qq.com us4@126.com</span><br></pre></td></tr></tbody></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> shell </tag>
+            
+            <tag> mail </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>文档编辑工具Typora之图片自动上传插件PicGo</title>
       <link href="/2022/01/05/hello-typora-picgo/"/>
       <url>/2022/01/05/hello-typora-picgo/</url>

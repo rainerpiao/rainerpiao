@@ -6,7 +6,7 @@
   <link href="https://rainerpiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://rainerpiao.github.io/"/>
-  <updated>2022-01-07T13:06:35.195Z</updated>
+  <updated>2022-01-08T16:08:07.599Z</updated>
   <id>https://rainerpiao.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mac中使用shell命令发送邮件</title>
+    <link href="https://rainerpiao.github.io/2022/01/08/hello-shell-mail/"/>
+    <id>https://rainerpiao.github.io/2022/01/08/hello-shell-mail/</id>
+    <published>2022-01-08T15:53:09.000Z</published>
+    <updated>2022-01-08T16:08:07.599Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;mac中使用shell命令发送邮件&quot;&gt;&lt;a href=&quot;#mac中使用shell命令发送邮件&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="shell" scheme="https://rainerpiao.github.io/tags/shell/"/>
+    
+    <category term="mail" scheme="https://rainerpiao.github.io/tags/mail/"/>
+    
+  </entry>
   
   <entry>
     <title>文档编辑工具Typora之图片自动上传插件PicGo</title>
