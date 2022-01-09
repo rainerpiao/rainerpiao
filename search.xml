@@ -4,12 +4,45 @@
   
     
     <entry>
+      <title>web攻击技术有哪些</title>
+      <link href="/2022/01/09/web-attack-method/"/>
+      <url>/2022/01/09/web-attack-method/</url>
+      
+        <content type="html"><![CDATA[<h2 id="web攻击技术有哪些"><a href="#web攻击技术有哪些" class="headerlink" title="web攻击技术有哪些"></a>web攻击技术有哪些</h2><p><img src="https://s2.loli.net/2022/01/09/F4qlgnNkzrXsjYQ.jpg" alt="web攻击技术水印"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+            <tag> attack </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mac中使用shell命令发送邮件</title>
       <link href="/2022/01/08/hello-shell-mail/"/>
       <url>/2022/01/08/hello-shell-mail/</url>
       
         <content type="html"><![CDATA[<h2 id="mac中使用shell命令发送邮件"><a href="#mac中使用shell命令发送邮件" class="headerlink" title="mac中使用shell命令发送邮件"></a>mac中使用shell命令发送邮件</h2><p>首先查看mail命令：</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">mail -hmail: illegal option -- hUsage: mail <span class="token punctuation">[</span>-EiInv<span class="token punctuation">]</span> <span class="token punctuation">[</span>-s subject<span class="token punctuation">]</span> <span class="token punctuation">[</span>-c cc-addr<span class="token punctuation">]</span> <span class="token punctuation">[</span>-b bcc-addr<span class="token punctuation">]</span> <span class="token punctuation">[</span>-F<span class="token punctuation">]</span> to-addr <span class="token punctuation">..</span>.       mail <span class="token punctuation">[</span>-EHiInNv<span class="token punctuation">]</span> <span class="token punctuation">[</span>-F<span class="token punctuation">]</span> -f <span class="token punctuation">[</span>name<span class="token punctuation">]</span>       mail <span class="token punctuation">[</span>-EHiInNv<span class="token punctuation">]</span> <span class="token punctuation">[</span>-F<span class="token punctuation">]</span> <span class="token punctuation">[</span>-u user<span class="token punctuation">]</span>       mail -e <span class="token punctuation">[</span>-f name<span class="token punctuation">]</span>       mail -H<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h3 id="发送邮件1"><a href="#发送邮件1" class="headerlink" title="发送邮件1"></a>发送邮件1</h3><p>邮件内容和标题不支持中文</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">'hello email'</span> <span class="token operator">|</span> mail -s <span class="token string">'https://rainerpiao.github.io'</span> user@qq.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="发送邮件2"><a href="#发送邮件2" class="headerlink" title="发送邮件2"></a>发送邮件2</h3><p>读取文件中的内容进行发送，支持中文内容, 但标题不支持中文。</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> test.txt <span class="token operator">|</span> mail -s <span class="token string">'https://rainerpiao.github.io'</span> user@qq.commail -s <span class="token string">"https://rainerpiao.github.io"</span> user@qq.com<span class="token operator">&lt;</span>test.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><h3 id="发送邮件3"><a href="#发送邮件3" class="headerlink" title="发送邮件3"></a>发送邮件3</h3><p>同时发送给多个收件人, 空格隔开</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> test.txt <span class="token operator">|</span> mail -s <span class="token string">'https://rainerpiao.github.io'</span> user1@qq.com user2@qq.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="发送邮件4"><a href="#发送邮件4" class="headerlink" title="发送邮件4"></a>发送邮件4</h3><p>发送邮件同时抄送给其他人</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">'hello cc'</span> <span class="token operator">|</span> mail -s <span class="token string">'https://rainerpiao.github.io'</span> -c <span class="token string">"useq@126.com"</span> user@qq.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="发送邮件5"><a href="#发送邮件5" class="headerlink" title="发送邮件5"></a>发送邮件5</h3><p>同时抄送并密送给其他人, 同时抄送多个人用;分割，并加引号””包含</p><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">'hello cc bcc'</span> <span class="token operator">|</span> mail -s <span class="token string">'hello test'</span> -c <span class="token string">"user1@126.com"</span> -b <span class="token string">"user2@qq.com"</span> user3@126.com<span class="token builtin class-name">echo</span> <span class="token string">'hello cc bcc'</span> <span class="token operator">|</span> mail -s <span class="token string">'hello mail123'</span> -c <span class="token string">'use1@gmail.com;use2@126.com'</span> -b us3@qq.com us4@126.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>]]></content>
       
+      
+      <categories>
+          
+          <category> shell </category>
+          
+      </categories>
       
       
         <tags>

@@ -6,7 +6,7 @@
   <link href="https://rainerpiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://rainerpiao.github.io/"/>
-  <updated>2022-01-09T02:50:31.082Z</updated>
+  <updated>2022-01-09T14:29:24.838Z</updated>
   <id>https://rainerpiao.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>web攻击技术有哪些</title>
+    <link href="https://rainerpiao.github.io/2022/01/09/web-attack-method/"/>
+    <id>https://rainerpiao.github.io/2022/01/09/web-attack-method/</id>
+    <published>2022-01-09T13:58:08.000Z</published>
+    <updated>2022-01-09T14:29:24.838Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;web攻击技术有哪些&quot;&gt;&lt;a href=&quot;#web攻击技术有哪些&quot; class=&quot;headerlink&quot; title=&quot;web攻击技术有哪些&quot;&gt;&lt;/a&gt;web攻击技术有哪些&lt;/h2&gt;&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="web" scheme="https://rainerpiao.github.io/categories/web/"/>
+    
+    
+    <category term="web" scheme="https://rainerpiao.github.io/tags/web/"/>
+    
+    <category term="attack" scheme="https://rainerpiao.github.io/tags/attack/"/>
+    
+  </entry>
+  
+  <entry>
     <title>mac中使用shell命令发送邮件</title>
     <link href="https://rainerpiao.github.io/2022/01/08/hello-shell-mail/"/>
     <id>https://rainerpiao.github.io/2022/01/08/hello-shell-mail/</id>
     <published>2022-01-08T15:53:09.000Z</published>
-    <updated>2022-01-09T02:50:31.082Z</updated>
+    <updated>2022-01-09T13:58:55.194Z</updated>
     
     
       
@@ -33,6 +60,8 @@
       
     
     
+    
+    <category term="shell" scheme="https://rainerpiao.github.io/categories/shell/"/>
     
     
     <category term="shell" scheme="https://rainerpiao.github.io/tags/shell/"/>
