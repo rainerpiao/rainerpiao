@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="mac中使用shell命令发送邮件, 天空很蓝">
-    <meta name="description" content="使用shell命令发送邮件，会不会觉得很牛叉？">
+    <meta name="keywords" content="vue网页版集成高德地图设置定位, 天空很蓝">
+    <meta name="description" content="Vue2网页端如何集成高德地图？">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>mac中使用shell命令发送邮件 | 天空很蓝</title>
+    <title>vue网页版集成高德地图设置定位 | 天空很蓝</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -312,12 +312,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">mac中使用shell命令发送邮件</h1>
+                    <h1 class="description center-align post-title">vue网页版集成高德地图设置定位</h1>
                 </div>
             </div>
         </div>
@@ -433,12 +433,20 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/shell/">
-                                <span class="chip bg-color">shell</span>
+                            <a href="/tags/amap/">
+                                <span class="chip bg-color">amap</span>
                             </a>
                         
-                            <a href="/tags/mail/">
-                                <span class="chip bg-color">mail</span>
+                            <a href="/tags/nginx/">
+                                <span class="chip bg-color">nginx</span>
+                            </a>
+                        
+                            <a href="/tags/vue/">
+                                <span class="chip bg-color">vue</span>
+                            </a>
+                        
+                            <a href="/tags/element-ui/">
+                                <span class="chip bg-color">element-ui</span>
                             </a>
                         
                     </div>
@@ -449,8 +457,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/shell/" class="post-category">
-                                shell
+                            <a href="/categories/web/" class="post-category">
+                                web
                             </a>
                         
                     </div>
@@ -462,7 +470,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-08
+                    2022-01-12
                 </div>
                 
 
@@ -476,14 +484,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    276
+                    1.5k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    8 分
                 </div>
                 
 
@@ -506,31 +514,403 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="mac中使用shell命令发送邮件"><a href="#mac中使用shell命令发送邮件" class="headerlink" title="mac中使用shell命令发送邮件"></a>mac中使用shell命令发送邮件</h2><p>首先查看mail命令：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">mail -h
-mail: illegal option -- h
-Usage: mail <span class="token punctuation">[</span>-EiInv<span class="token punctuation">]</span> <span class="token punctuation">[</span>-s subject<span class="token punctuation">]</span> <span class="token punctuation">[</span>-c cc-addr<span class="token punctuation">]</span> <span class="token punctuation">[</span>-b bcc-addr<span class="token punctuation">]</span> <span class="token punctuation">[</span>-F<span class="token punctuation">]</span> to-addr <span class="token punctuation">..</span>.
-       mail <span class="token punctuation">[</span>-EHiInNv<span class="token punctuation">]</span> <span class="token punctuation">[</span>-F<span class="token punctuation">]</span> -f <span class="token punctuation">[</span>name<span class="token punctuation">]</span>
-       mail <span class="token punctuation">[</span>-EHiInNv<span class="token punctuation">]</span> <span class="token punctuation">[</span>-F<span class="token punctuation">]</span> <span class="token punctuation">[</span>-u user<span class="token punctuation">]</span>
-       mail -e <span class="token punctuation">[</span>-f name<span class="token punctuation">]</span>
-       mail -H<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h2 id="申请高德开发key"><a href="#申请高德开发key" class="headerlink" title="申请高德开发key"></a>申请高德开发key</h2><p><a target="_blank" rel="noopener" href="https://console.amap.com/dev/index">https://console.amap.com/dev/index</a></p>
+<p>可以给每个系统单独申请一个KEY. 我申请了3个端的key，如下：</p>
+<p><img src="https://s2.loli.net/2022/01/12/xF8MQ7idzDTOGAY.png" alt="image-20220112162850550"></p>
+<h2 id="Vue中集成高德"><a href="#Vue中集成高德" class="headerlink" title="Vue中集成高德"></a>Vue中集成高德</h2><p>AMap-Vue 是一个基于 Vue.js 的高德地图 AMap JSAPI 封装。<a target="_blank" rel="noopener" href="https://jimnox.gitee.io/amap-vue/">https://jimnox.gitee.io/amap-vue/</a></p>
+<p>项目是V2.16版本，集成最新版本为”@amap/amap-vue”: “2.0.13”</p>
+<blockquote>
+<p>高德地图兼容性</p>
+<p><code>AMapVue</code>建议搭配<code>vue &gt;= 2.6.11</code>, <code>AMap 2.0</code>版本使用</p>
+<p>如果您在使用<code>AMap 1.4.*</code>，请搭配<code>AMapVue 1.4.*</code>使用</p>
+</blockquote>
+<h2 id="Vue项目中进行集成"><a href="#Vue项目中进行集成" class="headerlink" title="Vue项目中进行集成"></a>Vue项目中进行集成</h2><p>vue2+element-ui项目按需加载为例：</p>
+<ul>
+<li>第一步：首先在main.js中配置高德分配的key</li>
+</ul>
+<pre class="line-numbers language-js" data-language="js"><code class="language-js"><span class="token keyword">import</span> AmapVueConfig <span class="token keyword">from</span> <span class="token string">'@amap/amap-vue/lib/config'</span><span class="token punctuation">;</span>
+AmapVueConfig<span class="token punctuation">.</span>key <span class="token operator">=</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">AMAP_KEY</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h3 id="发送邮件1"><a href="#发送邮件1" class="headerlink" title="发送邮件1"></a>发送邮件1</h3><p>邮件内容和标题不支持中文</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">'hello email'</span> <span class="token operator">|</span> mail -s <span class="token string">'https://rainerpiao.github.io'</span> user@qq.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li><p>第二步：在app.vue中设置安全秘钥</p>
+<blockquote>
+<p>如果是内网，浏览器设置的代理需要有高德的访问权限</p>
+</blockquote>
+</li>
+</ul>
+<p>高德自2021年12月02日升级，升级之后所申请的 key 必须配备安全密钥 <strong>jscode</strong> 一起使用。</p>
+<p>​    AMAP_KEY: ‘“你申请的key”‘</p>
+<p>   AMAP_JSCODE: ‘“你申请的key对应的jscode”‘,</p>
+<p>​    AMAP_JSCODE_NGINX: ‘“<a target="_blank" rel="noopener" href="https://xxx.com/_AMapService&quot;'">https://XXX.com/_AMapService"'</a></p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">/**
+     * 高德地图安全秘钥设置
+     */
+    mounted() {
+        if (process.env.NODE_ENV === 'local') {
+            window._AMapSecurityConfig = {
+                securityJsCode: process.env.AMAP_JSCODE // 开发环境采用，直接配置你的jscode
+            };
+        } else {
+            window._AMapSecurityConfig = {
+                serviceHost: process.env.AMAP_JSCODE_NGINX // 生产\测试环境采用：通过下面的反向代理
+            };
+        }
+    }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h3 id="发送邮件2"><a href="#发送邮件2" class="headerlink" title="发送邮件2"></a>发送邮件2</h3><p>读取文件中的内容进行发送，支持中文内容, 但标题不支持中文。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> test.txt <span class="token operator">|</span> mail -s <span class="token string">'https://rainerpiao.github.io'</span> user@qq.com
-mail -s <span class="token string">"https://rainerpiao.github.io"</span> user@qq.com<span class="token operator">&lt;</span>test.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ul>
+<li><p>第三步：在nginx中配置高德反向代理，开发阶段不用配置</p>
+<blockquote>
+<p>如果是内网访问，nginx需要开通访问外网的防火墙。</p>
+</blockquote>
+<pre class="line-numbers language-nginx" data-language="nginx"><code class="language-nginx"><span class="token comment"># 自定义地图服务代理</span>
+<span class="token directive"><span class="token keyword">location</span> /_AMapService/v4/map/styles</span> <span class="token punctuation">{</span>
+		<span class="token directive"><span class="token keyword">set</span> <span class="token variable">$args</span> <span class="token string">"<span class="token variable">$args</span>&amp;jscode=你的jscode"</span></span><span class="token punctuation">;</span>
+		<span class="token directive"><span class="token keyword">proxy_pass</span> https://webapi.amap.com/v4/map/styles</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment"># Web服务API代理</span>
+<span class="token directive"><span class="token keyword">location</span> /_AMapService/</span> <span class="token punctuation">{</span>
+		<span class="token directive"><span class="token keyword">set</span> <span class="token variable">$args</span> <span class="token string">"<span class="token variable">$args</span>&amp;jscode=你的jscode"</span></span><span class="token punctuation">;</span>
+		<span class="token directive"><span class="token keyword">proxy_pass</span> https://restapi.amap.com/</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<h2 id="vue功能中使用高德地图"><a href="#vue功能中使用高德地图" class="headerlink" title="vue功能中使用高德地图"></a>vue功能中使用高德地图</h2><p>新建一个myMap.vue，内容如下</p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+    &lt;div id="myMapContainer"&gt;
+        &lt;amap cache-key="coord-picker-map" :center="initPosition" mmap-style="amap://styles/whitesmoke" async :zoom="13" is-hotspot @click="onMapClick"&gt;
+            &lt;MapComponent ref="refMapComponent" :positionInfo="positionInfo" @updatePosition="handleUpdatePosition" /&gt;
+        &lt;/amap&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
 
-<h3 id="发送邮件3"><a href="#发送邮件3" class="headerlink" title="发送邮件3"></a>发送邮件3</h3><p>同时发送给多个收件人, 空格隔开</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> test.txt <span class="token operator">|</span> mail -s <span class="token string">'https://rainerpiao.github.io'</span> user1@qq.com user2@qq.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+&lt;script&gt;
+import Amap from '@amap/amap-vue/lib/amap';
+// import AmapMarker from '@amap/amap-vue/lib/marker'
+import MapComponent from './mapComponent.vue';
 
-<h3 id="发送邮件4"><a href="#发送邮件4" class="headerlink" title="发送邮件4"></a>发送邮件4</h3><p>发送邮件同时抄送给其他人</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">'hello cc'</span> <span class="token operator">|</span> mail -s <span class="token string">'https://rainerpiao.github.io'</span> -c <span class="token string">"useq@126.com"</span> user@qq.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+export default {
+    components: { Amap, MapComponent },
+    props: {
+        positionInfo: {
+            required: false,
+            type: String
+        }
+    },
+    data() {
+        return {
+            center: null
+        };
+    },
+    created() {
+        console.log('created', this.positionInfo);
+    },
+    computed: {
+        initPosition() {
+            console.log('初始化当前地图中心', this.positionInfo);
+            if (this.positionInfo) {
+                console.log('初始化位置', this.positionInfo);
+                return this.positionInfo.split(',');
+            } else {
+                return null;
+            }
+        }
+    },
+    methods: {
+        onMapClick(e) {
+            console.log('onMapClick.....', e);
+            if (e.lnglat) {
+                this.$refs.refMapComponent.position = [e.lnglat.lng, e.lnglat.lat];
+            } else {
+                this.$refs.refMapComponent.position = null;
+            }
+        },
+        handleUpdatePosition(position) {
+            console.log('handleUpdatePosition.....', position);
+            this.$emit('setPosition', position);
+        }
+    }
+};
+&lt;/script&gt;
 
-<h3 id="发送邮件5"><a href="#发送邮件5" class="headerlink" title="发送邮件5"></a>发送邮件5</h3><p>同时抄送并密送给其他人, 同时抄送多个人用;分割，并加引号””包含</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token string">'hello cc bcc'</span> <span class="token operator">|</span> mail -s <span class="token string">'hello test'</span> -c <span class="token string">"user1@126.com"</span> -b <span class="token string">"user2@qq.com"</span> user3@126.com
-<span class="token builtin class-name">echo</span> <span class="token string">'hello cc bcc'</span> <span class="token operator">|</span> mail -s <span class="token string">'hello mail123'</span> -c <span class="token string">'use1@gmail.com;use2@126.com'</span> -b us3@qq.com us4@126.com<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+&lt;style rel="stylesheet/scss" lang="scss" scoped&gt;
+#myMapContainer {
+    width: 100%;
+    height: 600px;
+}
+&lt;/style&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>再新建一个mapComponent.vue,内容如下</p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;template&gt;
+    &lt;div class="my-custom-map-component"&gt;
+        &lt;amap-marker
+            v-if="position"
+            :position.sync="position"
+            :label="{
+                content: hover ? hover.name : '',
+                direction: 'top'
+            }"
+            draggable
+        /&gt;
+        &lt;el-card
+            :body-style="{
+                'max-height': '450px',
+                'overflow-y': 'scroll',
+                padding: '0 0'
+            }"
+            class="result-panel"
+        &gt;
+            &lt;template slot="header"&gt;
+                &lt;template v-if="mode === 'search'"&gt;
+                    &lt;el-autocomplete v-model="query" :fetch-suggestions="autoCompleteAsync" placeholder="请输入内容" :debounce="500" size="small" /&gt;
+                    &lt;el-button @click="search(true)" :disabled="!query" size="small" type="primary"&gt;搜索&lt;/el-button&gt;
+                &lt;/template&gt;
+                &lt;template v-if="mode === 'result'"&gt;
+                    &lt;div class="result-title"&gt;
+                        &lt;el-button icon="el-icon-arrow-left" @click="reset" size="small" style="margin-right: 6px" /&gt;
+                        &lt;span class="count"&gt;共 {{ searching ? '...' : total }} 条结果&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/template&gt;
+            &lt;/template&gt;
+
+            &lt;div v-if="mode === 'result' &amp;&amp; total &gt; 0" size="small" class="result-list"&gt;
+                &lt;el-pagination
+                    small
+                    style="padding-top: 20px; padding-bottom: 20px"
+                    layout="prev, pager, next"
+                    :page-size="pageSize"
+                    :current-page.sync="pageIndex"
+                    :total="total"
+                /&gt;
+                &lt;div v-for="item in results" :key="item.id"&gt;
+                    &lt;div class="item-title" @click="focus(item)"&gt;{{ item.name }}&lt;/div&gt;
+                    &lt;div class="item-addr"&gt;{{ item.address }}&lt;/div&gt;
+                    &lt;el-divider&gt;&lt;/el-divider&gt;
+                &lt;/div&gt;
+                &lt;el-pagination
+                    small
+                    style="padding-bottom: 20px"
+                    layout="prev, pager, next"
+                    :page-size="pageSize"
+                    :current-page.sync="pageIndex"
+                    :total="total"
+                /&gt;
+            &lt;/div&gt;
+        &lt;/el-card&gt;
+        &lt;el-card
+            v-if="position"
+            :body-style="{
+                padding: '0 0'
+            }"
+            class="info"
+        &gt;
+            &lt;span&gt;坐标:&lt;/span&gt;
+            &lt;el-input read-only :value="positionText" size="small" style="width: 180px" /&gt;
+            &lt;el-button @click="surePosition" size="small" type="primary"&gt;保存&lt;/el-button&gt;
+        &lt;/el-card&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+import { withAmap, loadPlugins } from '@amap/amap-vue';
+import AmapMarker from '@amap/amap-vue/lib/marker';
+
+export default {
+    name: 'MapComponent',
+    components: { AmapMarker },
+    mixins: [withAmap],
+    props: {
+        positionInfo: {
+            required: false,
+            type: String
+        }
+    },
+    data() {
+        return {
+            mode: 'search',
+            query: '',
+            searching: false,
+            tips: [],
+            results: [],
+            total: 0,
+            hover: null,
+            position: null,
+            pageIndex: 1,
+            pageSize: 20
+        };
+    },
+    watch: {
+        pageIndex(value) {
+            this.ps.setPageIndex(value);
+            this.search(false);
+        }
+    },
+    computed: {
+        positionText() {
+            if (!this.position) return '';
+            return `${this.position[0]},${this.position[1]}`;
+        }
+    },
+    async mounted() {
+        await loadPlugins(['AMap.AutoComplete', 'AMap.PlaceSearch']);
+        // eslint-disable-next-line no-undef
+        this.ps = new AMap.PlaceSearch({
+            pageSize: this.pageSize
+        });
+        // eslint-disable-next-line no-undef
+        this.ac = new AMap.AutoComplete();
+        if (this.positionInfo) {
+            console.log('初始化位置', this.positionInfo);
+            // eslint-disable-next-line no-undef
+            this.position = this.positionInfo.split(',');
+        }
+    },
+    methods: {
+        handleCurrentChange(val) {
+            console.log('handleCurrentChange', val);
+            this.pageIndex = val;
+        },
+        async search(clear = false) {
+            console.log('search', clear);
+            this.mode = 'result';
+
+            if (clear) {
+                this.results = [];
+                this.total = 0;
+                this.pageIndex = 1;
+                this.ps.setPageIndex(1);
+            }
+
+            this.searching = true;
+            const { query } = this;
+            this.ps.search(query, (status, result) =&gt; {
+                this.searching = false;
+                if (query !== this.query) return;
+
+                if (status === 'complete' &amp;&amp; result.poiList) {
+                    this.results = result.poiList.pois;
+                    this.total = result.poiList.count;
+                    this.fitView();
+                } else {
+                    this.results = [];
+                    this.total = 0;
+                }
+            });
+        },
+        autoCompleteAsync(kw, cb) {
+            console.log('1、autoCompleteAsync......', kw);
+            if (!kw) {
+                this.tips = [];
+                cb(this.tips);
+            } else {
+                this.ac.search(kw, (status, result) =&gt; {
+                    if (status === 'complete' &amp;&amp; result.tips) {
+                        console.log('2、autoCompleteAsync......', kw);
+                        const textArray = Array.from(new Set(result.tips.map(tip =&gt; tip.name)));
+                        this.tips = textArray.map(item =&gt; {
+                            return { value: item };
+                        });
+                        cb(this.tips);
+                    } else {
+                        this.tips = [];
+                        cb(this.tips);
+                    }
+                });
+            }
+        },
+
+        focus(poi) {
+            const pos = [poi.location.lng, poi.location.lat];
+            this.hover = poi;
+            this.$map.setCenter(pos);
+            this.position = [...pos];
+        },
+
+        fitView() {
+            requestAnimationFrame(() =&gt; {
+                this.$map.setFitView(null, false, [0, 0, 300, 0]);
+                this.focus(this.results[0]);
+            });
+        },
+
+        reset() {
+            this.ps.setPageIndex(1);
+            this.results = [];
+            this.tips = [];
+            this.total = 0;
+            this.mode = 'search';
+        },
+        surePosition() {
+            console.log(this.positionText);
+            console.log(this.position);
+            this.$emit('updatePosition', this.positionText);
+        }
+    }
+};
+&lt;/script&gt;
+
+&lt;style rel="stylesheet/scss" lang="scss" scoped&gt;
+.my-custom-map-component {
+    .result-panel {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+
+        .result-list {
+            margin: 0 12px;
+        }
+
+        .result-list.ant-list-loading {
+            min-height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .result-title {
+            .count {
+                font-size: 14px;
+                color: #999;
+            }
+        }
+
+        .item-title {
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .item-addr {
+            font-size: 14px;
+            color: #999;
+            margin-top: 20px;
+        }
+    }
+    .info {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 18px 20px;
+        background-color: #fff;
+    }
+}
+&lt;/style&gt;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>在使用该定位的页面增加如下代码：</p>
+<p> import MyMap from ‘views/components/map-location/myMap.vue’;</p>
+<pre class="line-numbers language-vue" data-language="vue"><code class="language-vue">&lt;div v-if="showMap"&gt;
+            &lt;el-dialog :append-to-body="true" title="定位设置" :visible.sync="showMap" :show-close="true" :close-on-click-modal="false" top="1vh" width="80%"&gt;
+                &lt;MyMap :positionInfo.sync="punchAddress" @setPosition="handleSetPosition" /&gt;
+            &lt;/el-dialog&gt;
+        &lt;/div&gt;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="最终效果"><a href="#最终效果" class="headerlink" title="最终效果"></a>最终效果</h2><p>通过关键字搜索，选择定位地址后会自动获取到坐标。</p>
+<p><img src="https://s2.loli.net/2022/01/12/iXcYEs9eAmL3KJW.png" alt="image-20220112170011036"></p>
+<p><img src="https://s2.loli.net/2022/01/12/VLFobtOlfs4WnHk.png" alt="image-20220112170140021"></p>
+<p>到这里，整个流程都通了，你也可以试试哦！有问题大家可以给我留言，一起交流学习吧！</p>
 
                 
             </div>
@@ -557,7 +937,7 @@ mail -s <span class="token string">"https://rainerpiao.github.io"</span> user@qq
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://rainerpiao.github.io/2022/01/08/hello-shell-mail/">https://rainerpiao.github.io/2022/01/08/hello-shell-mail/</a>
+                    <a href="https://rainerpiao.github.io/2022/01/12/start-amap/">https://rainerpiao.github.io/2022/01/12/start-amap/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -595,12 +975,20 @@ mail -s <span class="token string">"https://rainerpiao.github.io"</span> user@qq
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/shell/">
-                                    <span class="chip bg-color">shell</span>
+                                <a href="/tags/amap/">
+                                    <span class="chip bg-color">amap</span>
                                 </a>
                             
-                                <a href="/tags/mail/">
-                                    <span class="chip bg-color">mail</span>
+                                <a href="/tags/nginx/">
+                                    <span class="chip bg-color">nginx</span>
+                                </a>
+                            
+                                <a href="/tags/vue/">
+                                    <span class="chip bg-color">vue</span>
+                                </a>
+                            
+                                <a href="/tags/element-ui/">
+                                    <span class="chip bg-color">element-ui</span>
                                 </a>
                             
                         </div>
@@ -796,9 +1184,72 @@ mail -s <span class="token string">"https://rainerpiao.github.io"</span> user@qq
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/01/12/start-amap/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="vue网页版集成高德地图设置定位">
+                        
+                        <span class="card-title">vue网页版集成高德地图设置定位</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Vue2网页端如何集成高德地图？
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/web/" class="post-category">
+                                    web
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/amap/">
+                        <span class="chip bg-color">amap</span>
+                    </a>
+                    
+                    <a href="/tags/nginx/">
+                        <span class="chip bg-color">nginx</span>
+                    </a>
+                    
+                    <a href="/tags/vue/">
+                        <span class="chip bg-color">vue</span>
+                    </a>
+                    
+                    <a href="/tags/element-ui/">
+                        <span class="chip bg-color">element-ui</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/01/09/web-attack-method/">
                     <div class="card-image">
@@ -816,9 +1267,9 @@ mail -s <span class="token string">"https://rainerpiao.github.io"</span> user@qq
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-09
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-09
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -840,67 +1291,6 @@ mail -s <span class="token string">"https://rainerpiao.github.io"</span> user@qq
                     
                     <a href="/tags/attack/">
                         <span class="chip bg-color">attack</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/01/05/hello-typora-picgo/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="文档编辑工具Typora之图片自动上传插件PicGo">
-                        
-                        <span class="card-title">文档编辑工具Typora之图片自动上传插件PicGo</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            使用Typora写文档，如何方便的插入图片呢？
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-05
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%BB%BA%E7%AB%99/" class="post-category">
-                                    建站
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Typora/">
-                        <span class="chip bg-color">Typora</span>
-                    </a>
-                    
-                    <a href="/tags/Markdown/">
-                        <span class="chip bg-color">Markdown</span>
-                    </a>
-                    
-                    <a href="/tags/PicGo/">
-                        <span class="chip bg-color">PicGo</span>
-                    </a>
-                    
-                    <a href="/tags/SM-MS/">
-                        <span class="chip bg-color">SM.MS</span>
                     </a>
                     
                 </div>
