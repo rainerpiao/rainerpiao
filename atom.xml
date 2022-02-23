@@ -6,7 +6,7 @@
   <link href="https://rainerpiao.github.io/atom.xml" rel="self"/>
   
   <link href="https://rainerpiao.github.io/"/>
-  <updated>2022-01-12T09:44:46.492Z</updated>
+  <updated>2022-02-23T09:39:53.527Z</updated>
   <id>https://rainerpiao.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>vue网页版集成高德地图设置定位</title>
+    <title>vue网页版集成百度地图定位</title>
+    <link href="https://rainerpiao.github.io/2022/02/23/start-bmap/"/>
+    <id>https://rainerpiao.github.io/2022/02/23/start-bmap/</id>
+    <published>2022-02-23T11:13:51.000Z</published>
+    <updated>2022-02-23T09:39:53.527Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;申请百度地图KEY&quot;&gt;&lt;a href=&quot;#申请百度地图KEY&quot; class=&quot;headerlink&quot; title=&quot;申请百度地图KEY&quot;&gt;&lt;/a&gt;申请百度地图KEY&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="web" scheme="https://rainerpiao.github.io/categories/web/"/>
+    
+    
+    <category term="vue" scheme="https://rainerpiao.github.io/tags/vue/"/>
+    
+    <category term="element-ui" scheme="https://rainerpiao.github.io/tags/element-ui/"/>
+    
+    <category term="vue-bmap-gl" scheme="https://rainerpiao.github.io/tags/vue-bmap-gl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue网页版集成高德地图定位</title>
     <link href="https://rainerpiao.github.io/2022/01/12/start-amap/"/>
     <id>https://rainerpiao.github.io/2022/01/12/start-amap/</id>
     <published>2022-01-12T10:16:30.000Z</published>
-    <updated>2022-01-12T09:44:46.492Z</updated>
+    <updated>2022-02-23T09:39:47.692Z</updated>
     
     
       
@@ -37,13 +66,13 @@
     <category term="web" scheme="https://rainerpiao.github.io/categories/web/"/>
     
     
-    <category term="amap" scheme="https://rainerpiao.github.io/tags/amap/"/>
-    
     <category term="nginx" scheme="https://rainerpiao.github.io/tags/nginx/"/>
     
     <category term="vue" scheme="https://rainerpiao.github.io/tags/vue/"/>
     
     <category term="element-ui" scheme="https://rainerpiao.github.io/tags/element-ui/"/>
+    
+    <category term="AMapVue" scheme="https://rainerpiao.github.io/tags/AMapVue/"/>
     
   </entry>
   
